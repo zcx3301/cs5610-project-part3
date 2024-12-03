@@ -1,0 +1,95 @@
+.product-insertion {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+  }
+  
+  .product-form {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .form-group {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    transition: border-color 0.2s ease;
+  }
+  
+  .form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: var(--spacing-md);
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .submit-button:hover {
+    background: var(--primary-hover);
+  }
+  
+  .message {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  
+  .success-message {
+    background: var(--success-color);
+    color: white;
+  }
+  
+  .error-message {
+    background: var(--danger-color);
+    color: white;
+  }
+  
+  @media (max-width: 480px) {
+    .product-insertion {
+      padding: var(--spacing-md);
+    }
+  
+    .product-form {
+      padding: var(--spacing-lg);
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .product-insertion {
+      padding: var(--spacing-lg);
+    }
+  }

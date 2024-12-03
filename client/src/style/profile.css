@@ -1,0 +1,102 @@
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.profile-card {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.profile-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.profile-header h1 {
+  color: var(--text-primary);
+  font-size: var(--text-2xl);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.info-value {
+  color: var(--text-primary);
+}
+
+.profile-actions {
+  margin-top: var(--spacing-xl);
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.profile-button {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.edit-button:hover {
+  background: var(--primary-hover);
+}
+
+.delete-button {
+  background: white;
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+
+.delete-button:hover {
+  background: var(--danger-color);
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: var(--spacing-md);
+  }
+
+  .profile-card {
+    padding: var(--spacing-lg);
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .profile-container {
+    padding: var(--spacing-lg);
+  }
+
+  .profile-card {
+    padding: var(--spacing-lg);
+  }
+}
